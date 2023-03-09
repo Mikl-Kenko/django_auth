@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>В системе</title>
+</head>
+<body>
+<h1>Приветствую вас {{ user }}</h1>
+     <img src="{{ user_proffi.foto.url }}" alt="">
+<a href="{% url "logout_user" %}">Выйти из системы</a>
+<a href="{% url 'index' %}">Погулять</a>
+</body>
+</html>
